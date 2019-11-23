@@ -1,25 +1,31 @@
-import React from 'react';
+import React, {Component,Fragment} from 'react';
 import './App.css';
+import Goods from "./Components/Goods/Goods";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+
+    state = {
+
+};
+
+    render() {
+        return (
+            <Fragment>
+                <div className="App">
+                    <div className="Order">
+                        <h4>Order details:</h4>
+                        <p>Order is empty!</p>
+                        <p>Please add some items</p>
+                    </div>
+                    <p className="txt">Add items:</p>
+                    <div className="block">
+                        <Goods/>
+                    </div>
+                </div>
+            </Fragment>
+        );
+    }
 }
 
 export default App;
