@@ -6,7 +6,7 @@ const Goods = props => {
     Foods.map((food,index)=>(
         <div key={index} >
             <div>
-                <button className='btn'>
+                <button className='btn' onClick={() => props.addFood(food)}>
                     <h3>{food.name}</h3>
                     <p>{food.price + ' Сом'}</p>
                     <img src={food.image}/>

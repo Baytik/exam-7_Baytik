@@ -38,3 +38,11 @@ img {
 .txt {
   font-weight: bold;
 }
+.text-1 {
+  display: flex;
+  justify-content: space-between;
+}
+.Price {
+  margin-top: 20px;
+  text-align: center;
+}
